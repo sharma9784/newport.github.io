@@ -1,0 +1,478 @@
+/* Importing Google gont Muli */
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+
+/* Global */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Muli',sans-serif;
+    
+}
+
+    
+html{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+
+/* Navbar Starts Here */
+.navbar_btn{
+    border:3px solid;
+}
+.nav_style{
+    background: #fff;
+    box-shadow: 0 10px 30px 0 rgba(138,155,165,0.15);
+}
+.navbar-nav li a {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: #333;
+    position: relative;
+}
+
+.navbar-nav li a::before{
+    content:"";
+    
+    position: absolute;
+    top: 100%;
+  
+    width: 0%;
+    height: 5%;
+    background: #ff7230;
+    transition: all 0.2s linear;
+}
+.navbar-nav li a:hover::before{
+    width: 80%;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #ff7230;
+}
+@media (max-width:992px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .navbar-nav li a:hover::before{
+        width: 0%;
+    }
+    .navbar-light .navbar-nav .nav-link.active{
+        color: #ff7230;
+    }
+}
+
+
+
+
+/* Header Style Css */
+
+.header_text{
+    font-size: 1.5rem;
+    color: #8c8c8c;
+    margin-top: 50px;
+}
+.header_text span{
+    color: #ff7230;
+}
+
+.header_text2{
+    font-size: 26px;
+    color: #2d3436;
+    margin-bottom: 70px;
+}
+.span_header_text{
+    color: #ff7230;
+}
+.hire_me{
+    width: 160px;
+    height: 40px;
+    background: #ff7230;
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+
+}
+.about_me{
+    width: 160px;
+    height: 40px;
+    color: #ff7230;
+    background: #fff;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px solid #ff7230;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.hire_me:hover{
+    background: #fff;
+    color: #ff7230;
+    border: 1px solid #ff7230;
+}
+.about_me:hover{
+    background: #ff7230;
+    color: #fff;
+    border: none;
+}
+
+.header_mail p{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+
+}
+.header_mail p:nth-child(2){
+    margin-top: -20px;
+}
+
+
+/* About Section */
+
+#about_section{
+    background: rgba(0, 0, 0, 0.05);
+    
+}
+.main_title{
+    padding: 50px 0;
+}
+.main_title h1{
+    font-weight: 500;
+    font-size: 4rem;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+.about_text{
+    margin-top: -30px;
+}
+.about_text h2{
+font-size: 2rem;
+color: #000;
+margin-top: -20px;
+margin-bottom: 25px;
+}
+
+.about_text p{
+    font-size: 24px;
+    color: #000;
+
+}
+
+/* Work Exp Section */
+#expert_section{
+    background: rgba(0, 0, 0, 0.02);
+}
+#expert_section .main_title p{
+    font-size: 1.5rem;
+    color: #000;
+}
+#expert_section .progress{
+width: 90%;
+height: 14px;
+border-radius: 7px;
+}
+
+#expert_section .progress .pb_1{
+    width: 93%;
+    border-radius: 7px;
+    background-color: #ea2148;
+}
+#expert_section .progress .pb_2{
+    width: 93%;
+    border-radius: 7px;
+    background-color: #ff7230;
+}
+#expert_section .progress .pb_3{
+    width: 93%;
+    border-radius: 7px;
+    background-color: #1c9588;
+}
+
+
+
+/* Our Services */
+#services_section{
+    background-color: rgba(138,155,165,0.15);
+    padding-bottom: 45px;
+}
+#services_section .main_title p{
+    font-size: 1.5rem;
+}
+#services_section .services_div ul{
+    list-style: none;
+    padding: 20px 10px;
+}
+#services_section .services_div{
+    background-color: rgba(138,155,165,0.02);
+    padding-top: 15px;
+    transition: all 0.2s;
+    box-shadow: 3px 3px 8px rgb(211, 210, 210);
+}
+#services_section .services_div h1 span{
+    /* border: 2px solid; */
+    /* border: 1px solid;
+    border-color: #f3a27d; */
+    color: #ff7230;
+    border-radius: 50px;
+    padding: 5px 20px;
+    background: #ffeee6;
+
+    
+}
+#services_section .services_div:hover h1 span{
+    background: #fff;
+    border: 1px solid #ff7230;
+    }
+    #services_section .services_div:hover{
+        background-color:#fff;
+        box-shadow: 5px 5px 10px rgb(160, 158, 158);
+    }
+    #services_section .services_div:hover  i{
+        color: #ff7230;
+    }
+
+#services_section .services_div ul  li{
+    padding:5px 0px;
+    font-size: 1.2rem;
+}
+/* #services_section .services_div ul i{
+    color: #ff7230;
+} */
+#services_section .services_div>i{
+    color: #Fff;
+}
+
+
+
+
+/* Hire Me Section */
+
+#hireme_section{
+    padding-top: 45px;
+    text-align: center;
+    color: #fff;
+    position:relative;
+}
+#hireme_section::before{
+    content: "";
+    
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://static4.arrow.com/-/media/arrow/images/1200-x-600/s/shutterstock_226894858_2400x1200.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index:-1;
+    position: absolute;
+    background-attachment: fixed;
+    
+
+}
+#hireme_section h1{
+    color: #ff7230;
+}
+#hireme_section p{
+    font-size: 1.5rem;
+}
+#hireme_section h3{
+    margin-top: -10px;
+    font-size: 1.2rem;
+}
+#hireme_section .hire_me{
+    margin:20px;
+}
+
+
+
+
+/* Contact Section */
+
+#contact_section{
+padding-top: 45px;
+padding-bottom: 45px;
+position: relative;
+background-color: rgba(138,155,165,0.10);
+
+}
+
+#contact_section img{
+position: absolute;
+bottom: 25%;
+top:40%;
+right: 0;
+width:300px;
+}
+
+/* Contact Links */
+
+.contact_share_div{
+  
+    width: 25%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background:#f6f6f6;
+    transition:all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+.contact_share_div:hover{
+    background-color: #ffffff;
+    border: 1px solid #ff7230;
+    filter: drop-shadow(2px 0px 8px rgba(0,0,0,0.18));
+}
+
+.contact_share_div:hover i{
+color: #ff7230;
+}
+.contact_share_div p{
+    margin: 0;
+}
+
+
+
+/* Social Sites Links */
+
+
+.socialsites_links .fa-facebook-f:hover{
+color:#3b5998;   
+
+
+}
+.socialsites_links .fa-instagram:hover{
+color:#e4405f;    
+}
+.socialsites_links .fa-github:hover{
+color:#F4CBB2;    
+}
+.socialsites_links .fa-twitter:hover{
+color:#00acee;    
+}
+.socialsites_links .fa-behance:hover{
+color:#131418;    
+}
+
+/* Footer */
+footer{
+    background-color: #ff7230;
+    padding: 10px 0px;
+    
+    
+}
+footer p{
+   
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width:992px){
+
+
+    /* common Button */
+    .hire_me{
+        font-size: 1rem;
+        width: 100px;
+    }
+    .about_me{
+        font-size: 1rem;
+        width: 100px;
+    }
+
+    /* Main Header */
+    .header_text{
+        font-size: 1.2rem;
+    }
+    .header_text2{
+        font-size: 1.2rem;
+    }
+    /* about section */
+
+    .main_title h1{
+        font-size: 2.5rem;
+    }
+    .about_text{
+        margin-top: 17px;
+    }
+    .about_text p{
+        font-size: 15px;
+    }
+    .about_text h2 {
+        font-size: 1.2rem;
+    }
+    /* Work Exp section */
+
+    #expert_section .main_title p{
+        font-size: 1rem;
+    }
+    
+   .common_div{
+       margin-bottom:20px;
+
+       
+   }
+    /* Services Section */
+
+    #services_section .main_title p{
+        font-size: 1rem;
+    }
+    #services_section .services_div ul li{
+        font-size: 1rem;
+    }
+    /* hire me section */
+    #hireme_section p{
+        font-size: 1rem;
+    }
+    #hireme_section h3{
+        font-size: 1rem;
+    }
+    #hireme_section h1{
+        font-size: 1.5rem;
+    }
+  
+    /* contact section */
+    #contact_section p{
+        font-size: 1rem;
+    }
+    #contact_section .row:nth-child(2){
+        margin-top: -30px;
+        justify-content: center;
+    }
+    #contact_section .main_title{
+        padding-top: 0px;
+
+    }
+
+    /* Contact Link Section */
+    .contact_share_div{
+        width:100%;
+    }
+    .contact_share_div:nth-child(2){
+        margin:20px 0px;
+
+}
+
+
+
+
+
+
+
