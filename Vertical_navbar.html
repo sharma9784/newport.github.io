@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: Fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+    /* display: none; */
+  }
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+  
+#content.active {
+    width: 100%;
+    margin: 0;
+  }
+  .vertical-nav ul li{
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      padding:5px;
+      position: relative;
+  }
+  .vertical-nav ul li a{
+    font-weight: 600;
+  }
+  /* .vertical-nav ul li a{
+      position: relative;
+      padding-left: -10px;
+  } */
+
+  .vertical-nav ul li .active::before{
+    content: "";
+    background: blue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 100%;
+  }
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="col-md-2">
+    <div class="vertical-nav bg-white" id="sidebar">
+        <div class="py-4 px-3 mb-4 bg-light">
+          <div class="media d-flex align-items-center"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+            <div class="media-body">
+              <h4 class="m-0">Jayant Sharma</h4>
+              <p class="font-weight-light text-muted mb-0">Web developer</p>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+        <ul class="nav flex-column bg-white mb-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link active text-dark bg-light">
+                <i class="fas fa-user-circle mr-3 text-primary"></i></i>
+                      Profile
+                  </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark bg-light">
+                <i class="fas fa-user-circle mr-3 text-primary"></i></i>
+                      About Me
+                  </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark ">
+                      <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                      Skills
+                  </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark ">
+                      <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                      Projects
+                  </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark ">
+                <i class="fas fa-paper-plane mr-3 text-primary"></i></i>
+                      Contact Us
+                  </a>
+          </li>
+        </ul>
+      
+        
+       
+      </div>
+    </div>
+
+    <!-- Navbar Ends here -->
+
+    <!-- Profile section starts -->
+   <div class="col-md-10">
+        <h1>Hello</h1>
+   </div>
+
+
+
+
+   </div>
+</body>
+</html>
